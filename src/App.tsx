@@ -1,8 +1,10 @@
+import Home from "./pages/Home"
+
 function App() {
 
   return (
-    <div>
-      <h1>Grace</h1>
+    <div className="bg-light-gray h-screen flex flex-col justify-center w-full border-2 border-black">
+      <Home/>
     </div>
   )
 }
