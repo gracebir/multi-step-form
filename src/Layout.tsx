@@ -7,13 +7,10 @@ type prop = {
 
 function Layout({children}: prop) {
   return (
-    <div className="bg-color-white max-w-7xl flex flex-col lg:flex-row lg:w-[70%] mx-auto h-[70vh] p-5">
+    <div className="bg-color-white flex flex-row w-[55%] gap-14 mx-auto h-[65vh] p-5">
       <Navbar/>
       <div>
         {children}
-      </div>
-      <div>
-
       </div>
     </div>
   )
