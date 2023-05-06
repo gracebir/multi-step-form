@@ -1,10 +1,10 @@
-import Layout from "../Layout"
+import DeskTopLayout from "../layouts/DesktopLayout"
 
 function Home() {
   return (
-    <Layout>
-      Home page
-    </Layout>
+    <>
+    <DeskTopLayout/>
+    </>
   )
 }
 

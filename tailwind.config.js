@@ -19,6 +19,10 @@ export default {
         "magnolia":"hsl(217, 100%, 97%)",
         "alabaster":"hsl(231, 100%, 99%)",
         "color-white":"hsl(0, 0%, 100%)"
+      },
+      backgroundImage:{
+        "bg-desktop":"url('https://res.cloudinary.com/dnzidlufh/image/upload/v1683402050/bg-sidebar-desktop_mckory.svg')",
+        "bg-mobile":"url('https://res.cloudinary.com/dnzidlufh/image/upload/v1683402050/bg-sidebar-mobile_c6giwr.svg')"
       }
     },
   },
