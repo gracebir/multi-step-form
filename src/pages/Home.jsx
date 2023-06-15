@@ -1,11 +1,10 @@
 import React from 'react'
-import DeskLayout from '../Layouts/DeskLayout'
 
 function Home() {
   return (
-    <DeskLayout>
-      
-    </DeskLayout>
+    <div className=''>
+      <h1 className='text-3xl text-marine-blue font-bold'>Personal Info</h1>
+    </div>
   )
 }
 
