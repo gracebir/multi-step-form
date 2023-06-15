@@ -18,10 +18,14 @@ export default {
         'cool-gray': 'var(--color-cool-gray)',
         'magnolia': 'var(--color-magnolia)',
         'alabaster': 'var(--color-alabaster)',
-        'light-blue': 'var(--color-light-blue)',
+        'light-gray': 'var(--color-light-gray)',
         'color-white': 'var(--color-white)'
       }
     },
+    backgroundImage:{
+      'sidebar-image':'url(./assets/bg-sidebar-desktop.svg)',
+      'navbar-image':'url(./assets/bg-sidebar-mobile.svg)'
+    }
   },
   plugins: [],
 }
