@@ -23,7 +23,8 @@ export default {
       }
     },
     backgroundImage:{
-      'sidebar-image':'url(./assets/bg-sidebar-desktop.svg)'
+      'sidebar-image':'url(./assets/bg-sidebar-desktop.svg)',
+      'navbar-image':'url(./assets/bg-sidebar-mobile.svg)'
     }
   },
   plugins: [],
