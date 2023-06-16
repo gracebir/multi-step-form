@@ -12,7 +12,7 @@ function DeskLayout({ children }) {
             {children}
           </div>
           <div className="flex justify-between items-center row-span-1">
-            <Link className='text-cool-gray font-medium' to={"/"}>
+            <Link className='text-cool-gray font-medium hover:text-marine-blue duration-300' to={"/"}>
               Go back
             </Link>
             <Link className="bg-marine-blue py-3 px-7 rounded-lg font-medium" to={""}>
