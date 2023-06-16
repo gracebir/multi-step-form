@@ -25,7 +25,6 @@ function Home() {
         <TextField
         label="Name"
         name="name"
-        touched={touched.name}
         value={values.name}
         isError={touched.name && errors.name}
         placeholder={"e.g. Stephen King"}
@@ -37,7 +36,6 @@ function Home() {
         label="Email Address"
         name={"email"}
         value={values.email}
-        touched={touched.name}
         isError={touched.email && errors.email}
         placeholder={"e.g. stephenking@lorem.com"}
         type={"email"}
@@ -49,7 +47,6 @@ function Home() {
         name={"phoneNumber"}
         onBlur={handleBlur}
         value={values.phoneNumber}
-        touched={touched.phoneNumber}
         isError={touched.name && errors.name}
         placeholder={"e.g. +1 234 567 890"}
         type={"text"}
