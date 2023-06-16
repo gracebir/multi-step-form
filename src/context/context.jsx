@@ -3,7 +3,7 @@ import { createContext } from "react";
 
 const initialState = {
     isMonth: true,
-    setIsMonth:null
+    setIsMonth: undefined
 }
 
 export const AppContext = createContext(initialState)
