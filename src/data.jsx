@@ -48,3 +48,27 @@ export const planDatas = [
         img: pro
     }
 ]
+
+export const addOns = [
+    {
+        id: 1,
+        service: "Online service",
+        desc: 'Access to multiplayer games',
+        month: '+$1/mo',
+        year: '+$10/yr'
+    },
+    {
+        id: 2,
+        service: "Larger storage",
+        desc: 'Extra 1TB of cloud save',
+        month: '+$2/mo',
+        year: '+$20/yr'
+    },
+    {
+        id: 3,
+        service: "Customizable Profile",
+        desc: 'Custom theme on your profile',
+        month: '+$2/mo',
+        year: '+$20/yr'
+    }
+]
