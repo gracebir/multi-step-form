@@ -18,19 +18,19 @@ function DeskLayout({ children }) {
               <button onClick={decrease} className='text-cool-gray cursor-pointer font-medium hover:text-marine-blue duration-300' to={"/"}>
                 Go back
               </button>
-            ): <div></div>}
+            ) : <div></div>}
 
-            {currentIndex === navData.length -1 ? (
+            {currentIndex === navData.length - 1 ? (
               <button className="bg-purplish-blue cursor-pointer py-3 px-7 rounded-lg font-medium">
-              Confirm
-            </button>
-            ):(
+                Confirm
+              </button>
+            ) : (
               <button onClick={increase} className="bg-marine-blue cursor-pointer py-3 px-7 rounded-lg font-medium">
-              Next Step
-            </button>
+                Next Step
+              </button>
             )
             }
-            
+
           </div>
         </div>
       </div>

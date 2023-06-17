@@ -7,8 +7,8 @@ const initialState = {
     isMonth: true,
     setIsMonth: undefined,
     currentIndex: 0,
-    increase: () => {},
-    decrease: () => {},
+    increase: () => { },
+    decrease: () => { },
     setCurrentIndex: undefined
 }
 
@@ -24,11 +24,11 @@ export const AppProviver = ({ children }) => {
     }
 
     const decrease = () => {
-        setCurrentIndex((prev)  => {
-                  const newIndex = prev - 1;
-                  return newIndex >= 0 ? newIndex : navData.length - 1;
+        setCurrentIndex((prev) => {
+            const newIndex = prev - 1;
+            return newIndex >= 0 ? newIndex : navData.length - 1;
         })
-        navigate((navData[currentIndex -1].href))
+        navigate((navData[currentIndex - 1].href))
     }
     return (
         <AppContext.Provider value={{
