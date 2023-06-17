@@ -18,3 +18,21 @@
         --color-white: hsl(0, 0%, 100%);
     }
 }
+
+.sidebar:hover > span{
+    background-color: hsl(206, 94%, 87%);
+    color: hsl(213, 96%, 18%);
+}
+
+.active > span{
+    background-color: hsl(206, 94%, 87%);
+    color: hsl(213, 96%, 18%);
+}
+
+@media (max-width: 1023px) {
+    .active{
+        background-color: hsl(206, 94%, 87%);
+        color: hsl(213, 96%, 18%);
+        font-weight: 500;
+    }
+}
