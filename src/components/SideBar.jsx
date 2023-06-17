@@ -1,12 +1,14 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { NavLink } from 'react-router-dom'
 import { navData } from '../data'
+import { AppContext } from '../context/context'
 
 function SideBar() {
+  const { setCurrentIndex } = useContext(AppContext)
   return (
     <div className='h-full bg-sidebar-image bg-no-repeat bg-cover rounded-xl flex flex-col gap-9 col-span-1 w-full px-9 py-14'>
-        {navData.map((item)=> (
-             <NavLink to={item.href} key={item.id} className={`flex gap-5 items-center sidebar`}>
+        {navData.map((item, i)=> (
+             <NavLink onClick={()=> setCurrentIndex(i)} to={item.href} key={item.id} className={`flex gap-5 items-center sidebar`}>
              <span className='w-8 h-8 border flex items-center justify-center rounded-full font-bold border-white'>
                  {item.id}
              </span>
