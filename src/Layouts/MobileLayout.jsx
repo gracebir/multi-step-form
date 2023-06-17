@@ -1,8 +1,10 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import Navbar from '../components/Navbar'
-import { Link } from 'react-router-dom'
+import { AppContext } from '../context/context'
+import { navData } from '../data'
 
 function MobileLayout({ children }) {
+  const { increase, currentIndex, decrease } = useContext(AppContext)
   return (
     <div className='relative w-full flex lg:hidden flex-col justify-between bg-magnolia min-h-screen'>
       <Navbar />
@@ -12,12 +14,21 @@ function MobileLayout({ children }) {
         </div>
       </div>
       <div className="flex justify-between items-center px-4 bg-color-white py-4">
-        <Link className="text-cool-gray font-medium text-sm" to={""}>
-          Go Back
-        </Link>
-        <Link className="bg-marine-blue px-5 py-3 text-white rounded-md text-sm font-medium" to={""}>
-          Next Step
-        </Link>
+        {currentIndex > 0 ? (
+          <button onClick={decrease} className='text-cool-gray font-medium text-sm'>
+            Go back
+          </button>
+        ) : <div></div>}
+
+        {currentIndex === navData.length - 1 ? (
+          <button className="bg-purplish-blue px-5 py-3 text-white rounded-md text-sm font-medium">
+            Confirm
+          </button>
+        ) : (
+          <button onClick={increase} className="bg-marine-blue px-5 py-3 text-white rounded-md text-sm font-medium">
+            Next Step
+          </button>
+        )}
       </div>
     </div>
   )

@@ -1,8 +1,10 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import SideBar from '../components/SideBar'
-import { Link } from 'react-router-dom'
+import { AppContext } from '../context/context'
+import { navData } from '../data'
 
 function DeskLayout({ children }) {
+  const { increase, currentIndex, decrease } = useContext(AppContext)
   return (
     <div className='hidden lg:flex justify-center items-center w-full h-screen bg-magnolia font-ubuntu text-color-white'>
       <div className='hidden lg:grid grid-cols-3 gap-4 w-[64rem] shadow-lg  h-[70vh] mx-auto bg-color-white p-4 rounded-xl'>
@@ -12,12 +14,23 @@ function DeskLayout({ children }) {
             {children}
           </div>
           <div className="flex justify-between items-center row-span-1">
-            <Link className='text-cool-gray font-medium hover:text-marine-blue duration-300' to={"/"}>
-              Go back
-            </Link>
-            <Link className="bg-marine-blue py-3 px-7 rounded-lg font-medium" to={""}>
+            {currentIndex > 0 ? (
+              <button onClick={decrease} className='text-cool-gray cursor-pointer font-medium hover:text-marine-blue duration-300' to={"/"}>
+                Go back
+              </button>
+            ): <div></div>}
+
+            {currentIndex === navData.length -1 ? (
+              <button className="bg-purplish-blue cursor-pointer py-3 px-7 rounded-lg font-medium">
+              Confirm
+            </button>
+            ):(
+              <button onClick={increase} className="bg-marine-blue cursor-pointer py-3 px-7 rounded-lg font-medium">
               Next Step
-            </Link>
+            </button>
+            )
+            }
+            
           </div>
         </div>
       </div>
