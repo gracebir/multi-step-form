@@ -5,6 +5,7 @@ import Home from '../pages/Mobile/Home'
 import Add from '../pages/Mobile/Add'
 import Plan from '../pages/Mobile/Plan'
 import Summary from '../pages/Mobile/Summary'
+import Succes from '../pages/Mobile/Succes'
 
 function Mobile() {
   return (
@@ -14,6 +15,7 @@ function Mobile() {
         <Route element={<Add/>} path='/add' />
         <Route element={<Plan/>} path='/plan' />
         <Route element={<Summary/>} path='/summary' />
+        <Route element={<Succes/>} path='/summary/:success' />
       </Routes>
     </MobileLayout>
   )

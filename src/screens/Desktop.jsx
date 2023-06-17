@@ -5,6 +5,7 @@ import DeskLayout from '../Layouts/DeskLayout'
 import Add from '../pages/Add'
 import Plan from '../pages/Plan'
 import Summary from '../pages/Summary'
+import Succes from '../pages/Succes'
 
 function Desktop() {
   return (
@@ -14,6 +15,7 @@ function Desktop() {
         <Route element={<Add/>} path='/add' />
         <Route element={<Plan/>} path='/plan' />
         <Route element={<Summary/>} path='/summary' />
+        <Route element={<Succes/>} path='/summary/:id' />
       </Routes>
     </DeskLayout>
   )
